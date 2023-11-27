@@ -9,7 +9,9 @@ const MovieThumb = (props) => {
   return (
     <div className="adri-moviethumb">
       {clickable ? (
-        <Link to={{ pathname: `/${movieId}`, movieName: `${movieName}` }}>
+        <Link
+          to={{ pathname: `/movie_site/${movieId}`, movieName: `${movieName}` }}
+        >
           <img className="clickable" src={image} alt="moviethumb" />
         </Link>
       ) : (

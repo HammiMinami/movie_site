@@ -5,16 +5,16 @@ import "./Header.css";
 const Header = () => (
   <div className="adri-header">
     <div className="adri-header-content">
-      <Link className="adri-logo-link" to="/">
+      <Link className="adri-logo-link" to="/movie_site">
         <img
           className="adri-logo"
-          src="/images/reactMovie_logo.png"
+          src={`${process.env.PUBLIC_URL}/images/reactMovie_logo.png`}
           alt="movie-logo"
         />
       </Link>
       <img
         className="adri-second-logo"
-        src="/images/adri_logo.png"
+        src={`${process.env.PUBLIC_URL}/images/adri_logo.png`}
         alt="adri-logo"
       />
     </div>

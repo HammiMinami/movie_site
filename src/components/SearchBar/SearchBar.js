@@ -11,7 +11,6 @@ class SearchBar extends Component {
   timeout = null;
 
   doSearch = (event) => {
-    // ES6 Destructuring prop
     const { callback } = this.props;
 
     this.setState({ value: event.target.value });
@@ -24,7 +23,6 @@ class SearchBar extends Component {
   };
 
   render() {
-    // ES6 Destructuring state
     const { value } = this.state;
 
     return (

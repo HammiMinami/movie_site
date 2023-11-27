@@ -106,6 +106,10 @@ meter::-webkit-meter-even-less-good-value {
     min-height: 600px;
   }
 
+  .adri-movieinfo-text {
+    padding: 10px 30px 20px;
+  }
+
   .adri-movieinfo-thumb {
     width: 100% !important;
   }

@@ -8,6 +8,7 @@ import MovieInfoBar from "../../components/MovieInfoBar/MovieInfoBar";
 import Navigation from "../../components/Navigation/Navigation";
 import Spinner from "../../components/Spinner/Spinner";
 import "./Movie.css";
+import { isArrayEmpty } from "../../helpers";
 
 class Movie extends Component {
   state = {
@@ -59,7 +60,7 @@ class Movie extends Component {
     return (
       <div className="adri-movie">
         {movie ? (
-          <div>
+          <>
             <Navigation movie={movieName || movie.original_title} />
             <MovieInfo movie={movie} directors={directors} />
             <MovieInfoBar
@@ -67,12 +68,10 @@ class Movie extends Component {
               budget={movie.budget}
               revenue={movie.revenue}
             />
-          </div>
+          </>
         ) : null}
-        <>
-          <Details movie={movie} />
-        </>
-        {actors ? (
+        <>{movie && <Details movie={movie} />}</>
+        {!isArrayEmpty(actors) ? (
           <div className="adri-movie-grid">
             <FourColGrid header={"Actors"}>
               {actors.map((actor, i) => (

@@ -14,7 +14,7 @@ const Actor = (props) => {
         src={
           actor.profile_path
             ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}`
-            : "./images/no_image.jpg"
+            : `${process.env.PUBLIC_URL}/images/no_image.jpg`
         }
         alt="actorthumb"
       />

@@ -90,14 +90,14 @@ class Home extends Component {
     return (
       <div className="adri-home">
         {heroImage ? (
-          <div>
+          <>
             <HeroImage
               image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${heroImage.backdrop_path}`}
               title={heroImage.original_title}
               text={heroImage.overview}
             />
             <SearchBar callback={this.searchItems} />
-          </div>
+          </>
         ) : null}
         <div className="adri-home-grid">
           <FourColGrid
@@ -111,7 +111,7 @@ class Home extends Component {
                 image={
                   movie.poster_path
                     ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
-                    : "./images/no_image.jpg"
+                    : `${process.env.PUBLIC_URL}/images/no_image.jpg`
                 }
                 movieId={movie.id}
                 movieName={movie.original_title}

@@ -23,7 +23,7 @@ const MovieInfo = (props) => {
             image={
               movie.poster_path
                 ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
-                : "./images/no_image.jpg"
+                : `${process.env.PUBLIC_URL}/images/no_image.jpg`
             }
             clickable={false}
           />

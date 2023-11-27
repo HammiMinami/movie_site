@@ -70,9 +70,9 @@
   display: block;
   font-family: "Abel", sans-serif;
   font-size: 18px;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .adri-actor {
     height: 80%;
   }
@@ -80,22 +80,23 @@
   .adri-actor img {
     height: 200px;
   }
-}
+} */
 
 @media screen and (max-width: 425px) {
   .adri-grid-element {
-    display: flow;
+    display: contents;
   }
 
-  .adri-actor {
-    padding: 0 0 40px 0;
+  .adri-grid-content {
+    grid-gap: 10px;
   }
 
   .adri-actor img {
-    height: 200px;
+    height: 240px;
   }
 
   .adri-actor-name {
+    font-size: 20px;
     margin: 20px 5px 0 5px;
   }
 
@@ -104,7 +105,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .adri-actor img {
     height: 100px;
   }

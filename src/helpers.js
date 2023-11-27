@@ -12,3 +12,7 @@ export const convertMoney = (money) => {
   });
   return formatter.format(money);
 };
+
+export const isArrayEmpty = (arr) => {
+  return arr === null || arr.length === 0 || arr === undefined;
+};

@@ -9,7 +9,7 @@ const Navigation = (props) => {
   return (
     <div className="adri-navigation">
       <div className="adri-navigation-content">
-        <Link to="/">
+        <Link to="/movie_site">
           <span>Home</span>
         </Link>
         <span>/</span>
