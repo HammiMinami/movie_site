@@ -1,0 +1,63 @@
+.adri-movieinfobar {
+  align-items: center;
+  background: #1c1c1c;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  height: auto;
+  min-height: 100px;
+  padding: 20px;
+  width: 100%;
+}
+
+.adri-movieinfobar-content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.adri-movieinfobar-content-col {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+}
+
+.adri-movieinfobar-info {
+  float: left;
+  padding: 5px 0 0 10px;
+}
+
+.fa-time,
+.fa-revenue {
+  float: left;
+  margin-top: -4px;
+}
+
+.fa-budget {
+  float: left;
+  margin-top: -3px;
+}
+
+@media screen and (max-width: 425px) {
+  .adri-movieinfobar {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fa-time,
+  .fa-revenue,
+  .fa-budget {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .adri-movieinfobar-content-col {
+  }
+}

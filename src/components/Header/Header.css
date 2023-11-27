@@ -1,0 +1,51 @@
+.adri-header {
+  background: #1c1c1c;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.adri-header-content {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 100px;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+
+.adri-logo {
+  float: left;
+  margin-top: 20px;
+  width: 320px;
+}
+
+.adri-second-logo {
+  float: right;
+  margin-top: 25px;
+  width: 122px;
+}
+
+.adri-logo-link {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+  .adri-header-content {
+    max-width: 1280px;
+    min-height: 0px;
+  }
+
+  .adri-second-logo {
+    display: inline-block;
+    margin-top: 0px;
+    width: 80px;
+  }
+
+  .adri-logo {
+    margin-top: 5px;
+    width: 150px;
+  }
+}

@@ -1,0 +1,29 @@
+.adri-moviethumb {
+  border-radius: 20px;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.moviethumb {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.clickable {
+  /* max-height: 310px; */
+  cursor: pointer;
+  border-radius: 20px;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}

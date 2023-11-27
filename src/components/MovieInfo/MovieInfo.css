@@ -1,0 +1,120 @@
+.adri-movieinfo {
+  animation: animateMovieinfo 1s;
+  background-position: center !important;
+  background-size: cover !important;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+@keyframes animateMovieinfo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.adri-movieinfo-content {
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-height: 450px;
+  position: relative;
+}
+
+.adri-movieinfo-thumb {
+  float: left;
+  width: 300px;
+}
+
+.adri-movieinfo-text {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.adri-movieinfo-text h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.adri-movieinfo-text h3 {
+  font-size: 16px;
+  line-height: 0;
+  margin-top: 30px;
+}
+
+.adri-movieinfo-text p {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.adri-rating {
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+  width: 190px;
+}
+
+.adri-score {
+  margin: 0 -10px;
+  position: absolute;
+  right: 0px;
+  top: -3px;
+}
+
+.adri-director {
+  margin: 0;
+}
+
+.fa-film {
+  bottom: 40px;
+  color: #fff;
+  position: absolute;
+  right: 40px;
+}
+
+meter::-webkit-meter-bar {
+  background: #fff;
+  width: 150px;
+}
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to bottom, #16d47b) !important;
+}
+meter::-webkit-meter-suboptimum-value {
+  background: linear-gradient(to bottom, #fbb450) !important;
+}
+meter::-webkit-meter-even-less-good-value {
+  background: linear-gradient(to bottom, #ee5f5b) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .adri-movieinfo-text h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .adri-movieinfo {
+    height: auto;
+    min-height: 600px;
+  }
+
+  .adri-movieinfo-thumb {
+    width: 100% !important;
+  }
+
+  .fa-film {
+    display: none;
+  }
+
+  .adri-movieinfo-text h1 {
+    font-size: 32px;
+  }
+}
