@@ -86,9 +86,7 @@ class Home extends Component {
   render() {
     const { movies, heroImage, loading, currentPage, totalPages, searchTerm } =
       this.state;
-    console.log("✌️totalPages --->", totalPages);
-    console.log("✌️currentPage --->", currentPage);
-    console.log("movies", movies.length);
+
     return (
       <div className="adri-home">
         {heroImage ? (

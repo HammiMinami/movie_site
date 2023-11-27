@@ -15,7 +15,7 @@
   align-items: center;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
@@ -24,7 +24,6 @@
 .adri-movieinfobar-content-col {
   display: flex;
   justify-content: center;
-  width: 33.33%;
 }
 
 .adri-movieinfobar-info {
@@ -44,8 +43,8 @@
 }
 
 @media screen and (max-width: 425px) {
-  .adri-movieinfobar {
-    font-size: 14px;
+  .adri-movieinfobar-info {
+    font-size: 16px;
   }
 }
 
@@ -54,10 +53,5 @@
   .fa-revenue,
   .fa-budget {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .adri-movieinfobar-content-col {
   }
 }

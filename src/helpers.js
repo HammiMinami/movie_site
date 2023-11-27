@@ -5,7 +5,6 @@ export const calcTime = (time) => {
 };
 
 export const convertMoney = (money) => {
-  console.log("✌️money --->", money);
   let formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",

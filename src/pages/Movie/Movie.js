@@ -55,7 +55,6 @@ class Movie extends Component {
   render() {
     const { movieName } = this.props.location;
     const { actors, directors, loading, movie } = this.state;
-    console.log("✌️this.state --->", this.state);
 
     return (
       <div className="adri-movie">

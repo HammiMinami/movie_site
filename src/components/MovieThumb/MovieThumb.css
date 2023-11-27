@@ -7,17 +7,16 @@
 }
 
 .moviethumb {
-  border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   height: auto;
   object-fit: cover;
   width: 100%;
 }
 
 .clickable {
-  /* max-height: 310px; */
-  cursor: pointer;
   border-radius: 20px;
+  cursor: pointer;
   height: auto;
   object-fit: cover;
   transition: all 0.3s;
@@ -26,4 +25,12 @@
 
 .clickable:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .moviethumb {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }

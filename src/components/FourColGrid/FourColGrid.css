@@ -16,15 +16,21 @@
 
 @media screen and (max-width: 768px) {
   .adri-grid-content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .adri-grid h1 {
-    font-size: 22px;
+    font-size: 35px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
+  .adri-grid-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
   .adri-grid-content {
     grid-template-columns: repeat(1, 1fr);
   }

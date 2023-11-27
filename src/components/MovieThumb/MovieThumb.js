@@ -5,7 +5,6 @@ import "./MovieThumb.css";
 
 const MovieThumb = (props) => {
   const { image, movieId, movieName, clickable } = props;
-  console.log("✌️props --->", props);
 
   return (
     <div className="adri-moviethumb">

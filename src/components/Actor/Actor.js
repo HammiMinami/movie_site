@@ -6,20 +6,18 @@ import "./Actor.css";
 const Actor = (props) => {
   const { actor } = props;
 
-  const POSTER_SIZE = "w154";
+  const POSTER_SIZE = "w780";
 
   return (
     <div className="adri-actor">
-      <div>
-        <img
-          src={
-            actor.profile_path
-              ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}`
-              : "./images/no_image.jpg"
-          }
-          alt="actorthumb"
-        />
-      </div>
+      <img
+        src={
+          actor.profile_path
+            ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}`
+            : "./images/no_image.jpg"
+        }
+        alt="actorthumb"
+      />
       <div>
         <span className="adri-actor-name">{actor.name}</span>
         <span className="adri-actor-character">{actor.character}</span>

@@ -16,6 +16,6 @@ const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
 const BACKDROP_SIZE = "w1280";
 
 // w92, w154, w185, w342, w500, w780, original
-const POSTER_SIZE = "w500";
+const POSTER_SIZE = "w780";
 
 export { API_KEY, API_URL, BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE };
